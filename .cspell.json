@@ -1,0 +1,38 @@
+{
+  "ignorePaths": [
+    "**/node_modules/**",
+    "**/vscode-extension/**",
+    "**/.git/**",
+    "**/.gitignore",
+    "**/.jscpd.json",
+    "**/pnpm-lock.yaml",
+    ".vscode",
+    "megalinter-reports",
+    "**/dist/**",
+    "**/coverage/**"
+  ],
+  "language": "en",
+  "noConfigSearch": true,
+  "version": "0.2",
+  "dictionaries": [
+    "en_US",
+    "companies",
+    "softwareTerms",
+    "misc",
+    "lorem-ipsum",
+    "typescript",
+    "node",
+    "npm",
+    "bash"
+  ],
+  "allowCompoundWords": true,
+  "ignoreWords": [
+    "megalinter",
+    "oxsecurity",
+    "nestjs",
+    "typeorm",
+    "stefanzweifel",
+    "codeql"
+  ],
+  "words": ["TRIVY", "isready", "Suncin"]
+}
