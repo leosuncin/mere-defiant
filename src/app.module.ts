@@ -6,6 +6,7 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import common from './config/common';
 import db from './config/db';
+import { TaskModule } from './task/task.module';
 
 @Module({
   imports: [
@@ -21,6 +22,7 @@ import db from './config/db';
         return config.getOrThrow<TypeOrmModuleOptions>('db');
       },
     }),
+    TaskModule,
   ],
   controllers: [AppController],
   providers: [AppService],
