@@ -32,7 +32,11 @@
     "nestjs",
     "typeorm",
     "stefanzweifel",
-    "codeql"
+    "codeql",
+    "PGWEB",
+    "pgweb",
+    "TRIVY",
+    "sosedoff"
   ],
-  "words": ["TRIVY", "isready", "Suncin"]
+  "words": ["isready", "Suncin", "sslmode"]
 }
