@@ -11,6 +11,7 @@
     "**/.idea/**",
     "**/megalinter-reports/**",
     "**/*.svg",
-    "**/coverage/**"
+    "**/coverage/**",
+    "**/dist/**"
   ]
 }
