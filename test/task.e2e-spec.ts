@@ -51,7 +51,7 @@ describe('TaskController (e2e)', () => {
   });
 
   it('GET /task/:id', async () => {
-    const task = await repository.findOne({ where: {} });
+    const task = await repository.findOneOrFail({ where: {} });
 
     await request(app.getHttpServer())
       .get(`/task/${task.id}`)
@@ -66,7 +66,7 @@ describe('TaskController (e2e)', () => {
   });
 
   it('PATCH /task/:id', async () => {
-    const task = await repository.findOne({ where: {} });
+    const task = await repository.findOneOrFail({ where: {} });
     const data = { completed: true };
 
     await request(app.getHttpServer())
@@ -87,7 +87,7 @@ describe('TaskController (e2e)', () => {
   });
 
   it('DELETE /task/:id', async () => {
-    const task = await repository.findOne({ where: {} });
+    const task = await repository.findOneOrFail({ where: {} });
 
     await request(app.getHttpServer())
       .delete(`/task/${task.id}`)
