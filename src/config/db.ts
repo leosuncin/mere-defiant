@@ -1,6 +1,7 @@
 import { registerAs } from '@nestjs/config';
 import type { TypeOrmModuleOptions } from '@nestjs/typeorm';
-import { CreateTaskTableMigration } from 'src/migrations/1682914014424-create-task-table.migration';
+
+import { CreateTaskTableMigration } from '../migrations/1682914014424-create-task-table.migration';
 
 export default registerAs(
   'db',
