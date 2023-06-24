@@ -61,3 +61,5 @@ jobs:
           NODE_ENV: ci
       - name: Run tests 🧪
         run: pnpm test:e2e
+        env:
+          PACTUM_REQUEST_BASE_URL: http://localhost:3030
